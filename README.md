@@ -7,7 +7,9 @@ Open the Jupyter Notebook in the starter code folder named part_1_mars_news.ipyn
 1. Use automated browsing to visit the Mars news site Links to an external site.. Inspect the page to identify which elements to scrape.
 ### HINT
 To identify which elements to scrape, you might want to inspect the page by using Chrome DevTools.
+
 2. Create a Beautiful Soup object and use it to extract text elements from the website.
+
 3. Extract the titles and preview text of the news articles that you scraped. Store the scraping results in Python data structures as follows:
 - Store each title-and-preview pair in a Python dictionary and, give each dictionary two keys: title and preview. An example is the following:
 {'title': "NASA's MAVEN Observes Martian Light Show Caused by Major Solar Storm", 
@@ -21,7 +23,9 @@ Open the Jupyter Notebook in the starter code folder named part_2_mars_weather.i
 1. Use automated browsing to visit the Mars Temperature Data Site Links to an external site.. Inspect the page to identify which elements to scrape. Note that the URL is https://static.bc-edx.com/data/web/mars_facts/temperature.html.
 ### HINT
 To identify which elements to scrape, you might want to inspect the page by using Chrome DevTools to discover whether the table contains usable classes.
+
 2. Create a Beautiful Soup object and use it to scrape the data in the HTML table. Note that this can also be achieved by using the Pandas read_html function. However, use Beautiful Soup here to continue sharpening your web scraping skills.
+
 3. Assemble the scraped data into a Pandas DataFrame. The columns should have the same headings as the table on the website. Here’s an explanation of the column headings:
 - id: the identification number of a single transmission from the Curiosity rover
 - terrestrial_date: the date on Earth
@@ -30,9 +34,11 @@ To identify which elements to scrape, you might want to inspect the page by usin
 - month: the Martian month
 - min_temp: the minimum temperature, in Celsius, of a single Martian day (sol)
 - pressure: The atmospheric pressure at Curiosity's location
+
 4. Examine the data types that are currently associated with each column. If necessary, cast (or convert) the data to the appropriate datetime, int, or float data types.
 ### HINT
 You can use the Pandas astype and to_datetime methods to accomplish this task.
+
 5. Analyze your dataset by using Pandas functions to answer the following questions:
 - How many months exist on Mars?
 - How many Martian (and not Earth) days worth of data exist in the scraped dataset?
